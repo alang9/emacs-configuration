@@ -7,7 +7,7 @@
            (local-file (file-relative-name
                         temp-file
                         (file-name-directory buffer-file-name))))
-      (list "/home/jkakar/.emacs.d/plugins/epylint.py" (list local-file))))
+      (list "/home/alang/.emacs.d/plugins/epylint.py" (list local-file))))
   (add-to-list 'flymake-allowed-file-name-masks
                '("\\.py\\'" flymake-pyflakes-init))
   (add-to-list 'flymake-allowed-file-name-masks
@@ -17,13 +17,14 @@
   (outline-setup "^class \\|[ 	]*def \\|^#"))
 
 (defun my-flymake-find-file-hook ()
-  (if (file-writable-p buffer-file-name)
-      (flymake-find-file-hook)))
+  (if buffer-file-name
+      (if (file-writable-p buffer-file-name)
+      (flymake-find-file-hook))))
 
 (defun unset-python-newline-and-indent ()
   (local-unset-key [?\C-j]))
 
-(add-hook 'find-file-hook 'my-flymake-find-file-hook)
+;; (add-hook 'find-file-hook 'my-flymake-find-file-hook)
 (add-hook 'python-mode-hook 'python-outline-settings)
 (add-hook 'python-mode-hook
       '(lambda () "Defaults for Python mode." (setq fill-column 78)))
@@ -76,5 +77,15 @@
 (define-key global-map "\C-ca" 'org-agenda)
 (setq org-log-done t)
 
+;; Haskell
+
+(add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode)
+(remove-hook 'haskell-mode-hook 'turn-on-haskell-indent)
+(remove-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
+(add-hook 'haskell-mode-hook 'my-haskell-mode-hook)
+(defun my-haskell-mode-hook ()
+   (haskell-indentation-mode -1) ;; turn off, just to be sure
+   (haskell-indent-mode 1)       ;; turn on indent-mode
+   )
 
 (provide 'programming)
