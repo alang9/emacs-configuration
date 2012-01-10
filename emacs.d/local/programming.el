@@ -87,5 +87,8 @@
    (haskell-indentation-mode -1) ;; turn off, just to be sure
    (haskell-indent-mode 1)       ;; turn on indent-mode
    )
+(autoload 'ghc-init "ghc" nil t)
+;; flymake breaks emerge and ediff...
+;;(add-hook 'haskell-mode-hook (lambda () (ghc-init) (flymake-mode)))
 
 (provide 'programming)
