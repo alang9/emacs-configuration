@@ -31,7 +31,8 @@
 	    (lambda ()
 	      (define-key py-mode-map
 		"\C-^" 'py-test-run)))
-  (global-set-key [?\C-j] 'join-next-line))
+  (global-set-key [?\C-j] 'join-next-line)
+  (global-set-key (kbd "C-x a r") 'align-regexp))
 
 
 ;; Edit server
