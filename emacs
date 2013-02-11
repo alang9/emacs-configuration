@@ -18,6 +18,8 @@
 (load-library "highlight-80+.el")
 (require 'go-mode-load)
 (require 'clojure-mode)
+(require 'expand-region)
+(global-set-key (kbd "C-=") 'er/expand-region)
 
 ;; Local settings
 

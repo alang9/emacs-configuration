@@ -1,3 +1,7 @@
 [submodule "emacs.d/plugins/haskell-mode"]
 	path = emacs.d/plugins/haskell-mode
 	url = https://github.com/haskell/haskell-mode
+[submodule "emacs.d/plugins/er"]
+	path = emacs.d/plugins/er
+	url = git://github.com/magnars/expand-region.el.git
+
