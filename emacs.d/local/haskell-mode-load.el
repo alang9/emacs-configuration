@@ -4,7 +4,7 @@
 (custom-set-variables
  ;; Use cabal-dev for the GHCi session. Ensures our dependencies are in scope.
  '(haskell-process-type 'ghci)
- 
+
  ;; Use notify.el (if you have it installed) at the end of running
  ;; Cabal commands or generally things worth notifying.
  '(haskell-notify-p t)
@@ -61,10 +61,6 @@
 
   ;; Jump to the definition of the current symbol.
   (define-key haskell-mode-map (kbd "M-.") 'haskell-mode-tag-find)
-
-  ;; Save the current buffer and generate etags (a TAGS file) for the
-  ;; whole project.
-  (define-key haskell-mode-map (kbd "C-x C-s") 'haskell-mode-save-buffer)
 
   ;; Indent the below lines on columns after the current column.
   (define-key haskell-mode-map (kbd "C-<right>")
