@@ -4,3 +4,6 @@
 [submodule "emacs.d/plugins/er"]
 	path = emacs.d/plugins/er
 	url = git://github.com/magnars/expand-region.el.git
+[submodule "emacs.d/plugins/emacs-color-theme-solarized"]
+	path = emacs.d/plugins/emacs-color-theme-solarized
+	url = git@github.com:sellout/emacs-color-theme-solarized.git
