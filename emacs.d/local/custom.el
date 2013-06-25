@@ -49,3 +49,6 @@
  '(rst-level-6-face ((t (:foreground "grey50" :weight bold))) t)
  '(show-paren-match ((t (:background "#222244"))))
  '(smerge-refined-change ((t (:background "grey15")))))
+
+(require 'color-theme-solarized)
+(color-theme-solarized-light)
