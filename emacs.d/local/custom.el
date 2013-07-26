@@ -17,7 +17,7 @@
  '(js2-mirror-mode nil)
  '(js2-mode-escape-quotes nil)
  '(python-honour-comment-indentation t)
- '(safe-local-variable-values (quote ((haskell-program-name . "/home/alang/Projects/trader/release/bin/ghci") (test-case-name . twisted\.test\.test_protocols) (test-case-name . twisted\.words\.test\.test_irc) (test-case-name . twisted\.test\.test_factories\,twisted\.internet\.test\.test_protocol) (test-case-name . twisted\.web\.test\.test_web) (test-case-name . twisted\.test\.test_application\,twisted\.test\.test_cooperator) (test-case-name . twisted\.web\.test\.test_http) (test-case-name . twisted\.test\.test_defer\,twisted\.test\.test_defgen\,twisted\.internet\.test\.test_inlinecb))))
+ '(safe-local-variable-values (quote ((haskell-program-name . "/home/alang/Projects/Tsuru/trader/release/bin/ghci") (haskell-program-name . "/home/alang/Projects/trader/release/bin/ghci") (test-case-name . twisted\.test\.test_protocols) (test-case-name . twisted\.words\.test\.test_irc) (test-case-name . twisted\.test\.test_factories\,twisted\.internet\.test\.test_protocol) (test-case-name . twisted\.web\.test\.test_web) (test-case-name . twisted\.test\.test_application\,twisted\.test\.test_cooperator) (test-case-name . twisted\.web\.test\.test_http) (test-case-name . twisted\.test\.test_defer\,twisted\.test\.test_defgen\,twisted\.internet\.test\.test_inlinecb))))
  '(show-paren-delay 0)
  '(show-paren-mode 1)
  '(show-paren-style (quote expression)))
