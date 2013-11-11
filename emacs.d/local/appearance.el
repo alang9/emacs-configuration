@@ -39,19 +39,16 @@
   (setq scroll-conservatively 1))
 
 
-;; Customize
+;; Theme
 
-(defun set-and-load-custom-file ()
-  (setq custom-file "~/.emacs.d/local/custom.el")
-  (load custom-file))
-
+(add-to-list `custom-theme-load-path "~/.emacs.d/plugins/solarized-emacs")
+(load-theme 'solarized-light t)
 
 ;; Load all settings
 
 (disable-bars)
 (modeline-widgets)
 (highlight-region)
-(set-and-load-custom-file)
 (scrolling-behaviour)
 (whitespace-settings)
 
