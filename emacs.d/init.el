@@ -26,3 +26,11 @@
 (require 'appearance)
 (require 'interaction)
 (require 'programming)
+
+;; package.el
+
+(when (>= emacs-major-version 24)
+  (require 'package)
+  (package-initialize)
+  (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
+  )
