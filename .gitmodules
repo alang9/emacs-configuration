@@ -10,3 +10,7 @@
 [submodule "emacs.d/plugins/solarized-emacs"]
 	path = emacs.d/plugins/solarized-emacs
 	url = git@github.com:bbatsov/solarized-emacs.git
+[submodule "emacs.d/el-get-haskell"]
+	path = emacs.d/el-get-haskell
+	url = git://github.com/dysinger/el-get
+	branch = haskell
