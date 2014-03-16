@@ -26,6 +26,7 @@
 (require 'appearance)
 (require 'interaction)
 (require 'programming)
+(require 'el-get-load)
 
 ;; package.el
 
