@@ -20,11 +20,6 @@
 
 ;; Haskell main editing mode key bindings.
 (defun haskell-hook ()
-  ;; ghc-mod
-  (autoload 'ghc-init "ghc" nil t)
-  (ghc-init)
-  (flymake-mode)
-
   ;; Use simple indentation.
   (turn-on-haskell-simple-indent)
   (define-key haskell-mode-map (kbd "<return>") 'haskell-simple-indent-newline-same-col)
