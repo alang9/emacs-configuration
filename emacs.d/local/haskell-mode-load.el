@@ -13,7 +13,7 @@
  '(haskell-tags-on-save t)
 
  ;; To enable stylish on save.
- '(haskell-stylish-on-save t))
+ '(haskell-stylish-on-save nil))
 
 (add-hook 'haskell-mode-hook 'haskell-hook)
 (add-hook 'haskell-cabal-mode-hook 'haskell-cabal-hook)
