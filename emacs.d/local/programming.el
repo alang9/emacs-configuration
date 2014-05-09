@@ -79,7 +79,7 @@
 
 ;; Haskell
 
-(require 'haskell-mode-load)
+;; (require 'haskell-mode-load)
 
 ;; flymake breaks emerge and ediff...
 ;;(add-hook 'haskell-mode-hook (lambda () (ghc-init) (flymake-mode)))
